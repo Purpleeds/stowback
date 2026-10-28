@@ -1,0 +1,17 @@
+{
+  "name": "stowaway-server",
+  "version": "0.5.0",
+  "description": "Online game server for Stowaway, an original social-deduction space game.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "socket.io": "4.8.1"
+  }
+}

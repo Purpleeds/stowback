@@ -1,0 +1,14 @@
+# Render Blueprint: New → Blueprint → pick this repository.
+services:
+  - type: web
+    name: stowaway-game
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
